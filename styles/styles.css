@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("Woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("Woff2");
+  font-display: swap;
+}
+
+body {
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+nav {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.button-secondary {
+  font-family: inherit;  /*наследует шрифты из body*/
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.invitation {
+  background-image: url("../images/index-background-vector.svg"), url("../images/index-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-color: #474b4e;
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.description-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item {
+  background-color: #83B3D31F;
+}
+
+.advantages-item-wide {
+  background-color: #82B3D3;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.title-inner {
+  color: #000000;
+}
+
+.advantages-description {
+  color: #FFFFFF;
+}
+
+.description-inner {
+  color: #000000;
+}
+
+.reasons-item-first {
+  background-color: #83B3D31F;
+}
+
+.reasons-item-secondary {
+  background-color: #00000033;
+}
+
+input {
+  font-family: inherit;
+}
+
+form {
+  font-family: inherit;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-special {
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: #474b4e;
+}
+
+.filter {
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: #474b4e;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.filter-title-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.form-checkbox-label, .form-radio-label, .filter-title-control {
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.button-primary {
+  font-family: inherit;  /*наследует шрифты из body*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.button-alpha {
+  font-family: inherit;  /*наследует шрифты из body*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.select-control {
+  background-color: #FFFFFF;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.button-secondary-min {
+  font-family: inherit;  /*наследует шрифты из body*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-link-tap {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+
+
+

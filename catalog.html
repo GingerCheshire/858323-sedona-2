@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -60,7 +61,7 @@
       </header>
       <form class="filter-form form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-group">
-          <legend class="filter-title">Инфраструктура:</legend>
+          <legend class="filter-title filter-title-list">Инфраструктура:</legend>
           <ul class="filter-list">
             <li class="filter-item">
               <label class="form-checkbox">
@@ -84,7 +85,7 @@
         </fieldset>
 
         <fieldset class="filter-group">
-          <legend class="filter-title">Тип жилья:</legend>
+          <legend class="filter-title filter-title-list">Тип жилья:</legend>
 
           <ul class="filter-list">
             <li class="filter-item">
@@ -109,7 +110,7 @@
         </fieldset>
 
         <fieldset class="filter-group">
-          <legend class="filter-title">Стоимость, ₽::</legend>
+          <legend class="filter-title filter-title-list">Стоимость, ₽::</legend>
           <label class="filter-title-control"> От <input type="text" name="min-interval" value="0"></label>
           <label class="filter-title-control"> До <input type="text" name="max-interval" value="9000"></label>
           <button class="filter-title-button" type="button">
@@ -161,7 +162,8 @@
         </a>
         <p class="catalog-card-description">Гостиница</p>
         <p class="catalog-card-price">От 4000 ₽</p>
-        <a class="catalog-card-button" href="#">Подробнее</a>
+        <!---<a class="catalog-card-button" href="#">Подробнее</a>--->
+        <button class="catalog-card-button button button-secondary-min" href="#">Подробнее</button>
         <button class="catalog-card-button button button-primary" href="#">В избранное</button>
       </li>
 
@@ -207,7 +209,7 @@
     </section>
     <ul class="pagination">
       <li class="pagination-item">
-        <a class="pagination-link pagination-current" href="#">1</a>
+        <a class="pagination-link pagination-link-tap pagination-current" href="#">1</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link pagination-current" href="#">2</a>
