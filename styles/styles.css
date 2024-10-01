@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("Woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,13 +10,19 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("Woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   font-size: 18px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",  sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 21px;
@@ -24,29 +30,101 @@ body {
   background-color: #f2f2f2;
 }
 
-nav {
+.page-container {
+  background-color: #FFFFFF;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*H1-H5*/
+
+.h {
+  font-weight: 700;
+  color: #000000;
+}
+
+.h1 {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.h3-noncase {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+/*Buttons*/
+
+.button {
+  font-family: inherit;  /*наследует шрифты из body*/
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.button-primary {
+  background-color: #82B3D3;
+}
+
+.button-alpha {
+  background-color: transparent;
+}
+
+.button-secondary-min {
+  background-color: #756157;
+}
+
+.button-secondary {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/*Forms*/
+
+.form-checkbox-input,
+.form-radio-input,
+.field {
+  font-family: inherit;
+}
+
+/*Header*/
+
+.navigation {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
 }
 
-.button-secondary {
-  font-family: inherit;  /*наследует шрифты из body*/
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  background-color: #756157;
-}
+/*Footer*/
 
-.invitation {
-  background-image: url("../images/index-background-vector.svg"), url("../images/index-background.jpg");
-  background-size: 100% auto, cover;
-  background-repeat: no-repeat;
-  background-position: left bottom, left top;
-  background-color: #474b4e;
-}
+
+/*Description*/
 
 .description-title {
   font-weight: 700;
@@ -60,31 +138,33 @@ nav {
   line-height: 26px;
 }
 
-.advantages-item {
-  background-color: #83B3D31F;
+/*Invitation*/
+
+.invitation {
+  background-image: url("../images/index-background-vector.svg"), url("../images/index-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-color: #474b4e;
 }
 
-.advantages-item-wide {
+/*Advantages*/
+
+.advantages-card-deep {
   background-color: #82B3D3;
-}
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   color: #FFFFFF;
 }
 
-.title-inner {
-  color: #000000;
+.advantages-card-light {
+  background-color: #82b3d31f;
+}
+
+.advantages-card-deep .advantages-title {
+  color: inherit;
 }
 
 .advantages-description {
   color: #FFFFFF;
-}
-
-.description-inner {
-  color: #000000;
 }
 
 .reasons-item-first {
@@ -93,14 +173,6 @@ nav {
 
 .reasons-item-secondary {
   background-color: #00000033;
-}
-
-input {
-  font-family: inherit;
-}
-
-form {
-  font-family: inherit;
 }
 
 .subscribe-title {
@@ -145,51 +217,18 @@ form {
   color: #FFFFFF;
 }
 
-.form-checkbox-label, .form-radio-label, .filter-title-control {
+.form-checkbox-label,
+.form-radio-label,
+.filter-title-control {
   line-height: 23px;
   color: #FFFFFF;
-}
-
-.button-primary {
-  font-family: inherit;  /*наследует шрифты из body*/
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.button-alpha {
-  font-family: inherit;  /*наследует шрифты из body*/
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: transparent;
 }
 
 .select-control {
   background-color: #FFFFFF;
 }
 
-.catalog-card-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.button-secondary-min {
-  font-family: inherit;  /*наследует шрифты из body*/
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: #756157;
-}
-
 .pagination-link {
-  font-weight: 700;
-  font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -199,7 +238,3 @@ form {
   color: #000000;
   background-color: #F2F2F2;
 }
-
-
-
-
