@@ -20,7 +20,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-size: 18px;
   font-family: "PT Sans", "Arial",  sans-serif;
   font-weight: 400;
@@ -28,6 +36,10 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #f2f2f2;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-container {
@@ -40,6 +52,11 @@ body {
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /*H1-H5*/
@@ -115,14 +132,51 @@ body {
 /*Header*/
 
 .navigation {
+  display: flex;
+  width: 1200px;
   font-weight: 700;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
 }
 
-/*Footer*/
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
 
+.navigation-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+/*Footer*/
+.page-footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.social-list {
+  width: 142px;
+  margin-right: auto;
+}
+
+.contact-phone {
+  width: 720px;
+  margin: auto;
+}
+
+.developer {
+  width: 115px;
+  margin-left: auto;
+}
 
 /*Description*/
 
@@ -150,13 +204,28 @@ body {
 
 /*Advantages*/
 
+
+.advantages {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .advantages-card-deep {
   background-color: #82B3D3;
   color: #FFFFFF;
+  width: 400px;
 }
 
 .advantages-card-light {
   background-color: #82b3d31f;
+  width: 400px;
+}
+
+.advantages-card-medium {
+  width: 400px;
 }
 
 .advantages-card-deep .advantages-title {
